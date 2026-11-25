@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Saviano</title>
+  <meta name="description" content="Pagina personale di Saviano.">
+  <link rel="canonical" href="https://saviano.io/">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👋</text></svg>">
+  <style>
+    :root {
+      --bg: #fafaf9;
+      --fg: #1c1917;
+      --muted: #78716c;
+      --accent: #2563eb;
+      --line: #e7e5e4;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0c0a09;
+        --fg: #e7e5e4;
+        --muted: #a8a29e;
+        --accent: #60a5fa;
+        --line: #292524;
+      }
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 48px 20px;
+      background: var(--bg);
+      color: var(--fg);
+      font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+    main { width: 100%; max-width: 560px; }
+    h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 4px; letter-spacing: -0.02em; }
+    .role { color: var(--muted); margin: 0 0 28px; }
+    p { margin: 0 0 16px; }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 20px;
+      margin-top: 32px;
+      padding-top: 20px;
+      border-top: 1px solid var(--line);
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer { margin-top: 48px; color: var(--muted); font-size: 0.85rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Nome Cognome</h1>
+    <p class="role">Ruolo · Città</p>
+
+    <p>Due righe su di te: cosa fai, cosa ti interessa, su cosa stai lavorando.</p>
+    <p>Un'altra riga opzionale.</p>
+
+    <nav>
+      <a href="https://github.com/sgs00">GitHub</a>
+      <a href="https://www.linkedin.com/in/TUO-PROFILO">LinkedIn</a>
+      <a href="mailto:TUA-EMAIL">Email</a>
+    </nav>
+
+    <footer>© <span id="y">2026</span> saviano.io</footer>
+  </main>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
